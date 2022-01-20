@@ -1,0 +1,75 @@
+/*******************************************************************
+ * YOUR NAME
+ * Assignment number
+ * Date 
+ *******************************************************************
+ * Material by Leonidas Deligiannidis (deligiannidisl@wit.edu) 
+ * is licensed under a Creative Commons Attribution-NonCommercial 
+ * 3.0 Unported License 
+ * (http://creativecommons.org/licenses/by-nc/3.0/). 
+ *******************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+
+int main() {
+
+        int pid;
+        int n;
+        char buf[101];
+
+	// CREATE FIRST PIPE
+
+	// CREATE SECOND PIPE
+
+	// FORK()
+
+        if ( I AM THE CHILD ) {
+		// duplicate file descriptor 0 to point to FIRST pipe
+
+		// CLOSE ends of FIRST pipe you don't need anymore
+
+		// duplicate file descriptor 1 to point to SECOND pipe
+
+		// CLOSE ends of SECOND pipe you don't need anymore
+
+                execlp("./A4_CHILD", "./A4_CHILD", (char *) 0);
+                perror("execlp");
+                exit(-3);
+        } 
+
+	// PARENT PROCESS COMES HERE
+
+        close(pfd_A[0]);
+        close(pfd_B[1]);
+	printf("\t*** Welcome to this number-guessing game! ***\n\n");
+        while( 1 ) {
+        	char NUM[100];
+
+                int r=0;
+
+                printf("Enter a Number: ");
+                fflush(stdout);
+                scanf("%s", NUM);
+
+		// SEND   NUM   to Child process
+
+
+		// READ FROM CHILD THE RESPONSE into the variable buf and
+		//      store the return value from read() into the variable r
+
+		if( r > 0 ) {
+                        buf[r] = '\0';
+                        printf("%s\n", buf);
+                        fflush(stdout);
+                }
+                else {
+                        printf("[PARENT] Reading from child: read() returned %d\n", r);
+                        break;
+                }
+        }
+
+        return(0);
+}

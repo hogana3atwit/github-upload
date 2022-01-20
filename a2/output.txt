@@ -1,0 +1,6 @@
+Testing copy
+Hello
+This is part 1 of copy
+Everything here should be 
+In output after the program
+runssssss

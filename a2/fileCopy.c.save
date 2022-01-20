@@ -1,0 +1,87 @@
+/*******************************************************************
+ * Andrew Hogan
+ * Assignment number: 2
+ * Date: 10/5/2020 
+ *******************************************************************
+ * Material by Leonidas Deligiannidis (deligiannidisl@wit.edu) 
+/*******************************************************************
+ * YOUR NAME
+ * Assignment number
+ * Date 
+ *******************************************************************
+ * Material by Leonidas Deligiannidis (deligiannidisl@wit.edu) 
+ * is licensed under a Creative Commons Attribution-NonCommercial 
+ * 3.0 Unported License 
+ * (http://creativecommons.org/licenses/by-nc/3.0/). 
+ *******************************************************************/
+
+#include <fcntl.h>
+#include <stdio.h>
+
+
+int main ( int argc, char *argv[]) {
+	char buffer[257];
+
+	if( argc !=3 ) {
+		fprintf(stderr, "USAGE: %s inputFile outputFile.\n", argv[0]);
+		exit(-1);
+	}
+
+
+	/* OPEN INPUT FILE */
+
+	
+	/* OPEN OUTPUT FILE */
+
+
+	/* 
+	 * 	1) START A LOOP
+	 *	2) Read from input file into the buffer
+	 *         Don't read one byte at a time!  Try to read 257 bytes at a time. (this is a major requirement for this assignment).
+ 	 * 	3) Write, whatever you read into the buffer, into the output file
+	 */
+
+
+	/* CLOSE THE FILES */
+
+	return(0);
+}
+
+ * is licensed under a Creative Commons Attribution-NonCommercial 
+ * 3.0 Unported License 
+ * (http://creativecommons.org/licenses/by-nc/3.0/). 
+ *******************************************************************/
+
+#include <fcntl.h>
+#include <stdio.h>
+
+
+int main ( int argc, char *argv[]) {
+	char buffer[257];
+
+	if( argc !=3 ) {
+		fprintf(stderr, "USAGE: %s inputFile outputFile.\n", argv[0]);
+		exit(-1);
+	}
+
+
+	/* OPEN INPUT FILE */
+
+	
+	/* OPEN OUTPUT FILE */
+
+
+	/* 
+	 * 	1) START A LOOP
+	 *	2) Read from input file into the buffer
+	 *         Don't read one byte at a time!  Try to read 257 bytes at a time. (this is a major requirement for this assignment).
+ 	 * 	3) Write, whatever you read into the buffer, into the output file
+	 */
+
+
+	/* CLOSE THE FILES */
+
+	return(0);
+}
+
+
